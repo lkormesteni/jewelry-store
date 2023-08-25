@@ -4,6 +4,7 @@ import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import logoImg from '../assets/logo/Jewelry-Store-logo-black.png' 
 
+
 const navigation = {
   categories: [
     {
@@ -68,7 +69,7 @@ const navigation = {
     },
   ],
   pages: [
-    { name: 'Products', href: '#' },
+    // { name: 'Products', href: '#' },
   ],
 }
 
@@ -77,6 +78,9 @@ function classNames(...classes) {
 }
 
 function NavBar () {
+
+
+  
   const [open, setOpen] = useState(false)
 
   return (
@@ -183,13 +187,13 @@ function NavBar () {
                 </Tab.Group>
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
-                  {navigation.pages.map((page) => (
+                  {/* {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
                       <a href={page.href} className="-m-2 block p-2 font-medium text-gray-900">
                         {page.name}
                       </a>
                     </div>
-                  ))}
+                  ))} */}
                 </div>
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
@@ -224,7 +228,7 @@ function NavBar () {
 
       <header className="relative bg-white">
         <p className="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
-          Get free delivery on orders over $100
+          Get free delivery on orders over 100TND
         </p>
 
         <nav aria-label="Top" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
