@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.products img{
+    height: 240px;
+    width: 180px;
+
+}
+.products {
+    display: flex;
+    
+
+}
