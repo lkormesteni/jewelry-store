@@ -23,7 +23,7 @@ const Data = (props) => {
     }, []);
 
     return (
-        <div>
+        <div className="products">
                 {data.map((element, key) => (
                     <ProductDetails key={key} element={element}/>
                 ))}        

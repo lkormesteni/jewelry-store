@@ -9,7 +9,7 @@ const features = [
     { name: 'Description', description: 'Jewelry is a personal adornment worn on the body. It can be made of a variety of materials, including precious metals, gemstones, and other materials. Jewelry can be simple or elaborate, and it can be used to express personal style, commemorate special occasions, or symbolize love and commitment.' },
     { name: 'Price', description: 'Best prices' }
   ]
-  
+
 function ProductList () {
 
     return (
