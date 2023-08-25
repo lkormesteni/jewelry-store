@@ -4,12 +4,11 @@ function ProductDetails(props) {
     
   return (
     <div className="container-list-pic">
-        <span>Title : {props.element.title}</span>
-        <span>Description : {props.element.description}</span>
-        <span>Price : {props.element.price}</span>
         <img src={props.element.image} alt={props.element.image} />
-        <button  className="button-delete">DELETE</button>
-        <button className="button-update">UPDATE</button>
+        <span>Title : {props.element.title}</span> <br/>
+        <span>Description : {props.element.description}</span> <br/>
+        <span>Price : {props.element.price}</span> <br/>
+        <button className="button-order">ORDER</button>
     </div>
   );
 }
