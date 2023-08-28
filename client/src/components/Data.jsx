@@ -3,7 +3,7 @@ import axios from 'axios';
 import ProductDetails from "./ProductDetails.jsx";
 
 
-const Data = (props) => {
+const Data = () => {
     const [data, setData] = useState([]);
 
     // Move fetchData outside of the return statement

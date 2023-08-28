@@ -77,7 +77,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-function NavBar () {
+function NavBar ({changeToProduct}) {
 
 
   
@@ -344,15 +344,24 @@ function NavBar () {
                     </Popover>
                   ))}
 
-                  {navigation.pages.map((page) => (
-                    <a
-                      key={page.name}
-                      href={page.href}
-                      className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-                    >
-                      {page.name}
-                    </a>
-                  ))}
+{navigation.pages.map((page) => (
+  <a
+    key={page.name}
+    href={page.href}
+    onClick={(e) => {
+      e.preventDefault(); // Prevent default link behavior
+      if (page.name === 'Products') {
+        changeToProduct(); // Call your changeToProduct function
+      } else {
+        // Handle other links
+      }
+    }}
+    className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+  >
+    {page.name}
+  </a>
+))}
+
                 </div>
               </Popover.Group>
 
