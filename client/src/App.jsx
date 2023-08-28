@@ -9,6 +9,11 @@ import ProductList from './components/ProductList.jsx';
 function App() {
   const [view, setView] = useState('Login')
  
+  const changeToProduct = () => {
+    setView('products')
+    
+  }
+
   const changeToRegistration = () => {
     setView('Registration')
   }
@@ -23,10 +28,10 @@ function App() {
       {view === 'Registration' && <Registration changeToData={changeToData}/>}
       {view === 'Data' && 
       <div>
-      <Navbar />
+      <Navbar changeToProduct={changeToProduct}/>
       <ProductList />
-      <Data />
     </div>}
+      {view === 'products' && <Data />}
     </div>
     
   );
